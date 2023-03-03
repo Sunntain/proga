@@ -1,0 +1,13 @@
+mesto = int(input('Введите номер места: '))
+if mesto %  2 == 0 :
+    if mesto in range(1, 37):
+        print('Верхнее, купе')
+    if mesto in range(37, 55):
+        print('Верхнее, боковое')
+if mesto % 2 == 1 :
+    if mesto in range(1, 37):
+        print('Нижнее, купе')
+    if mesto in range(37, 55):
+        print('Нижнее, боковое')
+if mesto < 1 or mesto > 54 :
+    print('Такого места нет')
