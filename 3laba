@@ -15,26 +15,24 @@ def z2():
 
 def z3():
  from random import randint
- print('для выхода введите stop')
+ import sys
  kp = 0
  knp = 0
- while (r := str(input()) != "stop") and knp != 3:
-     while True:
-        x = randint(1,100)
-        y = randint(1,100)
-        print(f" {x} + {y} = ")
-        r = input()
-        while not r.isdigit():
-            print('введено не число, попробуйте снова')
-            r = input()
-        if r == "stop":
-            print("игра закончена, правильных ответов: ", kp)
-            break
-        r = int(r)
-        if x + y == r:
-            kp += 1
-        else:
-            print('ошибка')
-            knp += 1
-        if knp == 3:
-            print("игра закончена, правильных ответов: ", kp)
+ while knp != 3:
+   while True:
+     x = randint(1,50)
+     y = randint(1,50)
+     print(f" {x} + {y} = ", end="")
+     r = input()
+     if r == "stop":
+         print('игра закончена, верных ответов: ', kp)
+         sys.exit()
+     r = int(r)
+     if x+y==r:
+         kp+=1
+     else:
+         print('ошибка')
+         knp+=1
+     if knp == 3:
+         print('3 ошибки, игра окончена, верных ответов: ', kp)
+         break
