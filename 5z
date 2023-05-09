@@ -1,5 +1,0 @@
-n = int(input('Введите количество слов'))
-st=''
-for x in range(n):
-    st+=str(input('Введите слово: '))+' '
-print(st)
