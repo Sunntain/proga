@@ -1,0 +1,8 @@
+dog-собака
+cat-кошка
+mouse-мышь
+milk-молоко
+tea-чай
+sleep-сон
+lack of sleep-недосып
+
