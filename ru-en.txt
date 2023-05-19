@@ -1,7 +1,0 @@
-cat-кошка - cat-кошка
-dog-собака - dog-собака
-lack of sleep-недосып - lack of sleep-недосып
-milk-молоко - milk-молоко
-mouse-мышь - mouse-мышь
-sleep-сон - sleep-сон
-tea-чай - tea-чай
